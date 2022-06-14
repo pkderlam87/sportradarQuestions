@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #00003C;
+    --secondary-color: #fff;
+
+    --sportradar-bold: 600;
+}
+
+.boxes {
+    display: flex;
+    gap: 2%;
+    margin: 5% auto;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: var(--sportradar-bold);
+    text-align: center;
+    padding: 5%;
+}
