@@ -27,7 +27,7 @@
                 setTimeout(() => { resolve(document.getElementById("color-box").style.backgroundColor = color) }, delay))
         }
         /**
-        *The function promiseChangeColorAfter calls the changeColorAfter function inside an asynchronous function - keeping the colors and delay in the same order as in question 02.
+        *The function promiseChangeColorAfter calls the changeColorAfter function as an asynchronous function - keeping the colors and delay in the same order as in the question 02.
         */
         (async function promiseChangeColorAfter() {
             await changeColorAfter(1000, 'red');
