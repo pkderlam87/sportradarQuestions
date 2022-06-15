@@ -7,7 +7,7 @@ widthBox.innerHTML = `The width of the window is ${widthBrowser} px`;
 let heightBrowser = window.innerHeight;
 heightBox.innerHTML = `The height of the window is ${heightBrowser}px`;
 /**
- * This function get the window width and height if it changes and show the values in the boxes 
+ * This function gets the window width and height if it changes and shows the values in the boxes.
  */
 function widthHeightWindow() {
     let newWidthBrowser = 0;
@@ -25,7 +25,7 @@ function widthHeightWindow() {
 }
 widthHeightWindow();
 /**
- * This function disable the right click in the left box and show an alert
+ * This function disables the right click in the left box and shows an alert.
  */
 (function disableRightClick() {
     widthBox.addEventListener('contextmenu', function (event) {
@@ -34,7 +34,7 @@ widthHeightWindow();
     })
 })();
 /**
- * This function disable the left click in the right box and show an alert
+ * This function disables the left click in the right box and shows an alert.
  */
 (function disableLeftClick() {
     heightBox.addEventListener('click', function (event) {
