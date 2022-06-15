@@ -26,12 +26,17 @@
             return new Promise((resolve, reject) =>
                 setTimeout(() => { resolve(document.getElementById("color-box").style.backgroundColor = color) }, delay))
         }
-        changeColorAfter(1000, 'red')
-            .then(() => changeColorAfter(2000, 'orange'))
-            .then(() => changeColorAfter(3000, 'yellow'))
-            .then(() => changeColorAfter(1000, 'green'))
-            .then(() => changeColorAfter(4000, 'blue'))
-            .then(() => changeColorAfter(5000, 'indigo'))
+        /**
+        *The function promiseChangeColorAfter calls the changeColorAfter function inside an asynchronous function - keeping the colors and delay in the same order as in question 02.
+        */
+        (async function promiseChangeColorAfter() {
+            await changeColorAfter(1000, 'red');
+            await changeColorAfter(2000, 'orange');
+            await changeColorAfter(3000, 'yellow');
+            await changeColorAfter(1000, 'green');
+            await changeColorAfter(4000, 'blue');
+            await changeColorAfter(5000, 'indigo');
+        })();
     </script>
 </body>
 
