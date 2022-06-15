@@ -1,0 +1,11 @@
+.highest-TV-show {
+    max-width: 300px;
+    margin: 2% auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.highest-TV-show li:nth-child(2) {
+    border-top: 2px solid #707070;
+}

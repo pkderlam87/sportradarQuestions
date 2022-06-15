@@ -3,7 +3,7 @@ const highestTVShow = document.querySelector(".highest-TV-show");
 const n = 2;
 
 /**
- * This function sort the tvShows array by score and tiebreaker by numRatings 
+ * This function sorts the tvShows array by score and uses numRatings as a tiebreaker.  
  * @param {Array} tvShows- The array of tv shows
  */
 function sortByScore(tvShows) {
@@ -18,7 +18,7 @@ function sortByScore(tvShows) {
 sortByScore(tvShows);
 
 /**
- * This function display the two highest tvShows array by score
+ * This function displays the two highest rated TV show. 
  * @param {Array} tvShows- The array of tv shows orderly by score and ratings  
  */
 function displayHighestTVShow(tvShows) {
