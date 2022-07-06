@@ -2,28 +2,20 @@ const widthBox = document.querySelector("#leftBox");
 const heightBox = document.querySelector("#rightBox");
 const message = document.querySelector("#message");
 
-let widthBrowser = window.innerWidth;
-widthBox.innerHTML = `The width of the window is ${widthBrowser} px`;
-let heightBrowser = window.innerHeight;
-heightBox.innerHTML = `The height of the window is ${heightBrowser}px`;
+
+displayOn();
 /**
  * This function gets the window width and height if it changes and shows the values in the boxes.
  */
-function widthHeightWindow() {
-    let newWidthBrowser = 0;
-    let newHeightBrowser = 0;
-    if (widthBrowser !== newWidthBrowser || heightBrowser !== newHeightBrowser) {
-        newWidthBrowser = widthBrowser;
-        newHeightBrowser = heightBrowser;
-        window.addEventListener('resize', function (event) {
-            newWidthBrowser = window.innerWidth;
-            newHeightBrowser = window.innerHeight;
-            widthBox.innerHTML = `The width of the window is ${newWidthBrowser} px`;
-            heightBox.innerHTML = `The height of the window is ${newHeightBrowser} px`;
-        });
-    }
+window.addEventListener('resize', function (event) {
+    displayOn();
+});
+
+function displayOn() {
+    widthBox.innerHTML = `The width of the window is ${window.innerWidth} px`;
+    heightBox.innerHTML = `The height of the window is ${window.innerHeight} px`;
 }
-widthHeightWindow();
+
 /**
  * This function disables the right click in the left box and shows an alert.
  */
